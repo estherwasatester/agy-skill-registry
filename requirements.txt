@@ -1,3 +1,6 @@
+# Official Google Agent Development Kit
+google-adk>=2.1.0
+
 # Core Google Cloud Vertex AI SDK
 google-cloud-aiplatform==1.152.0
 

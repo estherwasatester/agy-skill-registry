@@ -70,6 +70,19 @@ Once imported, you do not need to call the CLI tools yourself. You can instruct 
 
 > "Can you check if we have any active security skills registered in our Google Cloud project?"
 
+### 3.5 Direct ADK Agent Execution
+
+To execute conversational turns directly against an ADK agent integrated with your GCP Skill Registry, you can use the CLI's `run` subcommand:
+
+```bash
+python3 skill_registry_cli.py run "Search skills for 'firebase' and tell me what you find"
+```
+
+Under the hood, this utilizes:
+1. **`google.adk.integrations.skill_registry.GCPSkillRegistry`** to connect to Vertex AI.
+2. **`google.adk.tools.skill_toolset.SkillToolset`** to dynamically mount search and load tools (`search_skills`, `load_skill`) to the agent.
+3. **`google.adk.Agent`** and **`google.adk.Runner`** to drive the dynamic agent flow.
+
 ---
 
 ## 4. Sharing with Other AGY Users
