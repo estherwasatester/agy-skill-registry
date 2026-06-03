@@ -20,3 +20,7 @@ get-pip.py
 .idea/
 .DS_Store
 Thumbs.db
+
+# Cloned external skills and helper scripts
+firebase-agent-skills/
+publish_firebase_skills.py
