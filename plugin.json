@@ -1,0 +1,16 @@
+{
+  "name": "agy-skill-registry",
+  "version": "1.0.0",
+  "description": "Antigravity plugin to interface with the Google Cloud Skill Registry (Vertex AI SDK) to search, retrieve, and publish modular skills.",
+  "author": "estherwasatester",
+  "engines": {
+    "antigravity": "^1.0.0"
+  },
+  "agents": [
+    {
+      "name": "skill_registry_agent",
+      "config": "skill_registry_agent_config.json"
+    }
+  ],
+  "skills": []
+}
