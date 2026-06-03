@@ -54,12 +54,26 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### 3. Setting Your GCP Project ID
-Before running the CLI or starting AGY, export your target project ID to your environment:
+### 3. Authentication (ADC Setup)
+To authenticate your local workstation with Google Cloud and allow the script/subagent to make API calls, run:
+
+```bash
+# Log in to Google Cloud with your user account
+gcloud auth login
+
+# Generate local Application Default Credentials (ADC)
+gcloud auth application-default login
+```
+
+This ensures that the underlying `google-cloud-aiplatform` Vertex SDK can securely and automatically authorize all search, pull, and push API calls.
+
+### 4. Setting Your GCP Project ID
+Before running the CLI or starting AGY, export your target Google Cloud Project ID:
 
 ```bash
 export ANTIGRAVITY_PROJECT_ID="your-gcp-project-id"
 ```
+
 
 ---
 

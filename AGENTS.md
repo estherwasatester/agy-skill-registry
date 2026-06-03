@@ -117,9 +117,15 @@ print(response)
 
 ## 5. Security & Credentials
 The `skill_registry_agent` inherits the calling user's local credentials. Other developers will need:
-1. Standard Google Cloud ADC (`gcloud auth application-default login`) or active internal `gcert` LOAS credentials.
-2. Direct access permissions (IAM Reader/Writer roles) on their target Vertex AI Agent Platform Project.
-3. Their project ID specified via the local environment variable:
+
+1. **Standard Google Cloud ADC** or active internal `gcert` LOAS credentials. To authenticate your workstation, run:
+   ```bash
+   gcloud auth login
+   gcloud auth application-default login
+   ```
+2. **Direct access permissions** (IAM Reader/Writer roles) on their target Vertex AI Agent Platform Project.
+3. **Their project ID** specified via the local environment variable:
    ```bash
    export ANTIGRAVITY_PROJECT_ID="your-target-project-id"
    ```
+
