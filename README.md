@@ -26,7 +26,8 @@ Clone this repository and create a Python virtual environment:
 ```bash
 python3 -m venv venv
 source venv/bin/activate
-pip install google-cloud-aiplatform==1.152.0 pyyaml pyopenssl
+pip install --upgrade pip
+pip install -r requirements.txt
 ```
 
 ### 3. CLI Usage

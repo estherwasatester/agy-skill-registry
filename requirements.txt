@@ -1,0 +1,8 @@
+# Core Google Cloud Vertex AI SDK
+google-cloud-aiplatform==1.152.0
+
+# YAML parsing for SKILL.md frontmatter metadata
+pyyaml>=6.0.1
+
+# Required for secure corporate network authentications (gcert mTLS bypass support)
+pyopenssl>=24.0.0
