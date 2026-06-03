@@ -17,7 +17,7 @@ pip install -r requirements.txt
 ```bash
 gcloud auth login
 gcloud auth application-default login
-export ANTIGRAVITY_PROJECT_ID="your-gcp-project-id"
+export GOOGLE_CLOUD_PROJECT="your-google-cloud-project-id"
 ```
 
 ### 3. CLI Usage

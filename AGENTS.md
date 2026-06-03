@@ -126,6 +126,6 @@ The `skill_registry_agent` inherits the calling user's local credentials. Other 
 2. **Direct access permissions** (IAM Reader/Writer roles) on their target Vertex AI Agent Platform Project.
 3. **Their project ID** specified via the local environment variable:
    ```bash
-   export ANTIGRAVITY_PROJECT_ID="your-target-project-id"
+   export GOOGLE_CLOUD_PROJECT="your-google-cloud-project-id"
    ```
 
